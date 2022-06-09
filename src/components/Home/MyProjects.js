@@ -11,15 +11,17 @@ const MyProjects = () => {
             .then(data => setProjects(data));
     }, [])
     return (
-        <div className='container'>
-            <h2>My Projects; {projects.length}</h2>
-            <div className='projects-container'>
-                {
-                    projects.map(project => <CardProjects
-                        key={project.id}
-                        project={project}
-                    ></CardProjects>)
-                }
+        <div id='my-projects' className='full-background'>
+            <div className='container'>
+                <h2 className='project-text'><span><u>My Projects</u></span></h2>
+                <div className='projects-container'>
+                    {
+                        projects.map(project => <CardProjects
+                            key={project.id}
+                            project={project}
+                        ></CardProjects>)
+                    }
+                </div>
             </div>
         </div>
     );
