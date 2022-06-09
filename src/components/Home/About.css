@@ -1,0 +1,16 @@
+.about-area{
+    display: flex;
+}
+.about-img img{
+    border-radius: 100%;
+}
+.about-text{
+    margin-top: 100px;
+    text-align: justify;
+    margin-left: 30px;
+}
+.cv-button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
