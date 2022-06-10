@@ -1,11 +1,15 @@
 .link-button{
     text-align: center;
 }
+.button-side{
+    margin-left: 20px;
+    color: white;
+}
 .link-button button{
     border: none;
     background-color: blueviolet;
-    padding: 10px 30px;
-    border-radius: 20px;
+    padding: 8px 30px;
+    border-radius: 10px;
 }
 .link-button a{
     text-decoration: none;

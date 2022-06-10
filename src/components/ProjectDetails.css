@@ -1,0 +1,88 @@
+.carousel-area {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.full-carousel img {
+    width: 400px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.carousel-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 30px;
+    /* text-align: center; */
+    color: blueviolet;
+}
+
+.carousel-text h5 {
+    margin-left: 50px;
+}
+
+.carousel-text p {
+    margin-left: 50px;
+}
+
+.carousel-text p {
+    color: rgb(235, 221, 221);
+}
+
+.carousel-text ul {
+    text-align: left;
+    /* margin-left: 10px; */
+}
+
+.carousel-text button {
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 5px 8px;
+    margin-left: 5px;
+}
+
+.button-area {
+    margin-left: 50px;
+}
+
+.carousel-text button a {
+    text-decoration: none;
+    color: azure;
+}
+
+.carousel-text button a:hover {
+    color: blueviolet;
+}
+
+.carousel-text button:hover {
+    background-color: white;
+    border: 1px solid blueviolet;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-area {
+        display: block;
+        margin-left: 0px;
+        margin-right: 50px;
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    .carousel-text {
+        display: block;
+        margin-left: 0px;
+        margin-right: 20px;
+        width: 350px;
+        margin-top: 30px;
+    }
+    .full-carousel img {
+        width: 400px;
+        height: 200px;
+        margin-right: 20px;
+    }
+}

@@ -1,9 +1,16 @@
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './CardProjects.css';
 
 const CardProjects = ({ project }) => {
-    const { name, img, technology, liveLink } = project;
+    const {id, name, img, technology, liveLink } = project;
+    const navigate = useNavigate();
+
+    const navigateProjectDetail = id =>{
+        navigate(`/cardprojects/${id}`);
+    }
+
     return (
         <div className='container'>
             <div className='single-cart'>
@@ -17,9 +24,12 @@ const CardProjects = ({ project }) => {
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer className='link-button'>
+                            <div className='d-flex'>
                             <button>
                                 <a href={liveLink} target="_blank" >Live-Link</a>
                             </button>
+                            <button className='button-side' onClick={() => navigateProjectDetail(id)}>Details</button>
+                            </div>
                         </Card.Footer>
                     </Card>
                 </CardGroup>
