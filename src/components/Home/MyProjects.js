@@ -11,7 +11,7 @@ const MyProjects = () => {
             .then(data => setProjects(data));
     }, [])
     return (
-        <div id='my-projects' className='full-background'>
+        <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" id='my-projects' className='full-background'>
             <div className='container'>
                 <h2 className='project-text'><span><u>My Projects</u></span></h2>
                 <div className='projects-container'>

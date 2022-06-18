@@ -7,13 +7,8 @@ const ProjectDetails = () => {
     const { projectId } = useParams();
     const data = useData();
     console.log(data);
-    //    const allData = useProjects();
-    //    console.log(allData);
+    
     const project = data.find(data => data.id === projectId);
-    //    console.log(project);
-    // const [project] = useState(projectId)
-
-    // const { name, img, img1, img2, img3, technology, liveLink } = project;
 
     return (
         <div className='container'>

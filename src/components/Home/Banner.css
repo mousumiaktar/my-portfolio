@@ -1,5 +1,5 @@
 .full-banner{
-    background-color: #070000;
+    background-color: rgb(10, 0, 19);
 }
 .banner-area{
     display: flex;
@@ -8,6 +8,7 @@
 }
 .banner-text{
     margin-top: 100px;
+    text-align: center;
 }
 .banner-text h2{
     color:rgb(219, 206, 231);
@@ -19,6 +20,7 @@
     width: 500px;
     height: 400px;
 }
+
 
 @media screen and (max-width: 600px){
     .banner-area{

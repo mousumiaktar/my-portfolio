@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import './CardProjects.css';
 
 const CardProjects = ({ project }) => {
-    const {id, name, img, technology, liveLink } = project;
+    const { id, name, img, technology, liveLink } = project;
     const navigate = useNavigate();
 
-    const navigateProjectDetail = id =>{
+    const navigateProjectDetail = id => {
         navigate(`/cardprojects/${id}`);
     }
 

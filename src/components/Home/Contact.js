@@ -34,7 +34,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='contact-information'>
+                    <div data-aos="fade-right" className='contact-information'>
                         <h2><u>Contact Me</u></h2>
                         <form className='row' style={{ margin: "25px 85px 75px 100px" }} ref={form} onSubmit={sendEmail}>
                             <label>Name</label>
