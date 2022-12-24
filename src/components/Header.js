@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div>
+        <div className='bg-black'>
             <Navbar className='menu-bar' collapseOnSelect expand="lg" sticky='top'variant="dark">
                 <Container>
                     <Navbar.Brand>
@@ -16,16 +16,15 @@ const Header = () => {
 
                         </Nav>
                         <Nav className='header-text'>
-                            <Nav.Link style={{color:"blueviolet"}} className='menu-link' href="#about">About</Nav.Link>
-                            <Nav.Link style={{color:"blueviolet"}} className='menu-link' href="#myskill">Skill</Nav.Link>
-                            <Nav.Link style={{color:"blueviolet"}} className='menu-link' href="#my-projects">My-Projects</Nav.Link>
-                            <Nav.Link style={{color:"blueviolet"}} className='menu-link' href="#contact">Contact</Nav.Link>
-                            <Nav.Link style={{color:"blueviolet"}} className='menu-link' href="#blog">Blog</Nav.Link>
+                            <Nav.Link style={{color:"white"}} className='menu-link' href="#about">About</Nav.Link>
+                            <Nav.Link style={{color:"white"}} className='menu-link' href="#myskills">Skill</Nav.Link>
+                            <Nav.Link style={{color:"white"}} className='menu-link' href="#my-projects">My-Projects</Nav.Link>
+                            <Nav.Link style={{color:"white"}} className='menu-link' href="#contact">Contact</Nav.Link>
+                            <Nav.Link style={{color:"white"}} className='menu-link' href="#blog">Blog</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <hr />
         </div>
     );
 };

@@ -11,10 +11,13 @@ const MyProjects = () => {
             .then(data => setProjects(data));
     }, [])
     return (
-        <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" id='my-projects' className='full-background'>
+        <div id='my-projects' className='bg-black py-8'>
             <div className='container'>
-                <h2 className='project-text'><span><u>My Projects</u></span></h2>
-                <div className='projects-container'>
+                <div data-aos="fade-left" className='md:px-24 lg:px-24'>
+                    <h2 className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-white'><span>Portfolio</span></h2>
+                    <p className='pt-3 text-white'>Check out some of my work here</p>
+                </div>
+                <div data-aos="fade-right" className='projects-container mt-5 md:px-24 lg:px-24'>
                     {
                         projects.map(project => <CardProjects
                             key={project.id}

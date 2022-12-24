@@ -1,4 +1,4 @@
-.contact-form input{
+/* .contact-form input{
     width: 240px;
 }
 .contact-container h2{
@@ -41,9 +41,7 @@
 form label{
     color: blueviolet;
 }
-/* .contact-information hr{
-    height: 2px;
-} */
+
 @media screen and (max-width: 600px){
     .contact-container{
         display: block;
@@ -53,4 +51,4 @@ form label{
         width: 300px;
         padding: 0 10px;
     }
-}
+} */

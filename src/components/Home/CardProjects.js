@@ -13,24 +13,22 @@ const CardProjects = ({ project }) => {
 
     return (
         <div className='container'>
-            <div className='single-cart'>
+            <div className='single-cart shadow-md shadow-white rounded-md mb-5 md:mb-0 lg-mb-0'>
                 <CardGroup>
-                    <Card>
+                    <Card className='bg-black'>
                         <Card.Img variant="top" src={img} />
                         <Card.Body>
                             <Card.Title>{name}</Card.Title>
                             <Card.Text>
-                                <p>Technology Used: {technology}</p>
+                                <p></p>
+                                <div className='d-flex'>
+                                    <button className='border-1 px-1 rounded-md mr-5'>
+                                        <a className='no-underline text-white' href={liveLink} target="_blank" >Live-Preview</a>
+                                    </button>
+                                    <button className='button-side border-1 px-1 rounded-md text-white' onClick={() => navigateProjectDetail(id)}>Details</button>
+                                </div>
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer className='link-button'>
-                            <div className='d-flex'>
-                            <button>
-                                <a href={liveLink} target="_blank" >Live-Link</a>
-                            </button>
-                            <button className='button-side' onClick={() => navigateProjectDetail(id)}>Details</button>
-                            </div>
-                        </Card.Footer>
                     </Card>
                 </CardGroup>
             </div>

@@ -7,18 +7,21 @@ import ProjectDetails from './components/ProjectDetails';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import Blog from './components/Blog/Blog';
 
+
 function App() {
   return (
-    <AuthProvider>
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
-        <Route path="/blog" element={<Blog></Blog>}></Route>
-        <Route path="/cardprojects/:projectId" element={<ProjectDetails></ProjectDetails>}></Route>
-      </Routes>
-    </AuthProvider>
+    <div className='bg-black'>
+      <AuthProvider>
+        <Header></Header>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/home" element={<Home></Home>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/blog" element={<Blog></Blog>}></Route>
+          <Route path="/cardprojects/:projectId" element={<ProjectDetails></ProjectDetails>}></Route>
+        </Routes>
+      </AuthProvider>
+    </div>
   );
 }
 

@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
-import contactimg from '../../images/contact.png';
-import './Contact.css';
 
 const Contact = () => {
     const form = useRef();
@@ -19,31 +17,19 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='full-background'>
+        <div id='contact' className='bg-[#090808] py-8'>
             <div className='container'>
-                <div className='contact-container'>
-                    <div className='img-background'>
-                        <div className='img-information'>
-                            <img src={contactimg} alt="" />
-                            <div className='img-text-area'>
-                                <h4><span><u>Get in touch</u></span></h4>
-                                <p>Name: Mousumi Aktar</p>
-                                <p>Phone: +8801784056496</p>
-                                <p>Email: ridimarahmanmou5804@gmail.com</p>
-                                <p>Address: Dinajpur, Rajshahi, Bangladesh</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className='contact-information'>
-                        <h2><u>Contact Me</u></h2>
-                        <form className='row' style={{ margin: "25px 85px 75px 100px" }} ref={form} onSubmit={sendEmail}>
-                            <label>Name</label>
-                            <input type="text" name="user_name" className='form-control' />
-                            <label>Email</label>
-                            <input type="email" name="user_email" className='form-control' />
-                            <label>Message</label>
-                            <textarea name="message" className='form-control mb-3' />
-                            <input type="submit" value="Send" />
+                <div data-aos="fade-right" className='contact-container md:px-24 lg:px-24'>
+                    <div className='contact-information'>
+                        <h2 className='text-white'>Contact Me</h2>
+                        <form className='mt-4'  ref={form} onSubmit={sendEmail}>
+                            
+                            <input type="text" name="user_name" className='form-control bg-transparent mb-4' placeholder='Enter Your Name' />
+                            
+                            <input type="email" name="user_email" className='form-control bg-transparent mb-4' placeholder='Enter Your Email'/>
+                            
+                            <textarea name="message" className='form-control mb-3 bg-transparent pb-4' placeholder='Write Your Messege'/>
+                            <input type="submit" value="Send" className='border text-white py-2 px-8 rounded-md hover:bg-cyan-600 duration-500' />
                         </form>
                     </div>
                 </div>
