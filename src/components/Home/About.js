@@ -9,7 +9,7 @@ const About = () => {
             <div className='container'>
                 <div className='md:flex justify-between gap-24 items-center lg:flex lg:px-24 md:px-24 md:mx-24 lg:mx-24 px-1'>
                     <div data-aos="fade-right" className='rounded-md bg-gradient-to-r from-pink-500  p-1'>
-                        <img  className='md:h-96 md:w-screen' src={myimg} alt="" />
+                        <img  className='md:h-96 w-11/12' src={myimg} alt="" />
                     </div>
                     <div data-aos="fade-left" className='text-white mt-3 md:mt-0 lg:mt-0'>
                         <h3 className='border-b-4 border-gray-500 p-2 inline'>About Me</h3>
