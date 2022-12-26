@@ -25,7 +25,7 @@ const CardProjects = ({ project }) => {
                                     <button className='border-1 px-1 rounded-md mr-5'>
                                         <a className='no-underline text-white' href={liveLink} target="_blank" >Live-Preview</a>
                                     </button>
-                                    <button className='button-side border-1 px-1 rounded-md text-white' onClick={() => navigateProjectDetail(id)}>Details</button>
+                                    {/* <button className='button-side border-1 px-1 rounded-md text-white' onClick={() => navigateProjectDetail(id)}>Details</button> */}
                                 </div>
                             </Card.Text>
                         </Card.Body>
