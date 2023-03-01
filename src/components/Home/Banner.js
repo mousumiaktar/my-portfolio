@@ -12,14 +12,14 @@ const Banner = () => {
     return (
         <div className=' bg-black md:pb-24 lg:pb-24 pb-5 md:pt-24 lg:pt-24 pt-4'>
             <div className='container'>
-                <div className='md:flex justify-around items-center lg:flex'>
+                <div className='md:flex justify-around items-center'>
                     <div className='text-white leading-10'>
                         <h5>Hi there!!</h5>
-                        <h2>I am <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500'>Mousumi Aktar</span></h2>
-                        <h3><span style={{ color: '#CA3D83', fontWeight: 'bold' }}>
+                        <h2>I am <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#1769FF] to-[#55ACEE]'>Mousumi Aktar</span></h2>
+                        <h3><span style={{ color: '#55ACEE', fontWeight: 'bold' }}>
                             <Typewriter
                                 words={['Frontend developer!', 'Web developer!', 'React Developer!']}
-                                loop={15}
+                                loop={100}
                                 cursor
                                 cursorStyle='|'
                                 typeSpeed={70}
@@ -42,7 +42,7 @@ const Banner = () => {
                             </a>
                         </div>
                     </div>
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-bottom">
                         <img className='h-72 mt-5 md:mt-0 lg-mt-0' src={secondimg} alt="" />
                     </div>
                 </div>
